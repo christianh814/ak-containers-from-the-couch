@@ -20,7 +20,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/christianh814/kargo-deployment-example
+        repoURL: https://github.com/christianh814/ak-containers-from-the-couch
         targetRevision: stage/{{stage}}
         path: ./
       destination:
