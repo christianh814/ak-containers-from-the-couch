@@ -4,4 +4,4 @@ resources:
 - ../../base
 images:
 - name: docker.io/christianh814/gobg
-  newTag: v1.2.0
+  newTag: v1.3.0
