@@ -18,7 +18,7 @@ spec:
       annotations:
         kargo.akuity.io/authorized-stage: kargo-demo:{{stage}}
     spec:
-      project: tenants
+      project: default
       source:
         repoURL: https://github.com/christianh814/kargo-deployment-example
         targetRevision: stage/{{stage}}
