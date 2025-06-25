@@ -24,7 +24,7 @@ spec:
         targetRevision: stage/{{stage}}
         path: ./
       destination:
-        name: eks-{{stage}
+        name: eks-{{stage}}
         namespace: demo
       syncPolicy:
         syncOptions:
