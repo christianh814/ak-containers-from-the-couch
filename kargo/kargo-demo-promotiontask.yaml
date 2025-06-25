@@ -52,7 +52,7 @@ spec:
     as: commit
     config:
       path: ./dst
-      message: ${{ outputs['update-image'].commitMessage }}
+      message: ${{ task.outputs['update-image'].commitMessage }}
 
   - uses: git-push
     as: push
