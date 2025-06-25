@@ -17,6 +17,9 @@ spec:
             spec:
               containers:
               - name: test
-                image: grycap/cowsay
+                image: alpine:latest
+                command:
+                - sleep
+                - "0"
                 imagePullPolicy: IfNotPresent
               restartPolicy: Never
