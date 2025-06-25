@@ -13,7 +13,7 @@ spec:
   - name: sourceBranch
     value: main
   - name: imageRepo
-    value: docker.io/christianh814/gobg
+    value: christianh814/gobg
   - name: targetBranch
 
   steps:
