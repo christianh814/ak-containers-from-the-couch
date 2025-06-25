@@ -42,6 +42,18 @@ spec:
       - image: ${{ vars.imageRepo }}
         tag: ${{ imageFrom( vars.imageRepo ).Tag }}
 
+  - uses: git-commit
+    as: commit-main
+    config:
+      path: ./src
+      message: ${{ task.outputs['update-image'].commitMessage }}
+
+  - uses: git-push
+    as: push-main
+    config:
+      path: ./src
+      targetBranch: ${{ vars.sourceBranch }}
+
   - uses: kustomize-build
     as: build-manifests
     config:
