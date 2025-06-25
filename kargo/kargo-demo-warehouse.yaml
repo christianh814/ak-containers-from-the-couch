@@ -1,0 +1,14 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  name: kargo-demo
+  namespace: kargo-demo
+spec:
+  subscriptions:
+  - image:
+      repoURL: docker.io/christianh814/gobg
+      imageSelectionStrategy: SemVer
+      allowTags: '^v\d+\.\d+\.\d+$'
+      semverConstraint: '>= 1.0.0'
