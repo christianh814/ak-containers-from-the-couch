@@ -15,6 +15,9 @@ spec:
     sources:
       stages:
       - test
+  verification:
+    analysisTemplates:
+    - name: kargo-demo
   promotionTemplate:
     spec:
       vars:

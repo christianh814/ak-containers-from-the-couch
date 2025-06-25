@@ -14,6 +14,9 @@ spec:
       name: kargo-demo
     sources:
       direct: true
+  verification:
+    analysisTemplates:
+    - name: kargo-demo
   promotionTemplate:
     spec:
       vars:
