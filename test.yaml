@@ -16,7 +16,7 @@ spec:
         app: gobg
     spec:
       containers:
-      - image: ghcr.io/christianh814/gobg:v1.3.3
+      - image: ghcr.io/christianh814/gobg:v1.3.1
         name: gobg
         resources: {}
 ---
