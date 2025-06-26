@@ -8,7 +8,7 @@ metadata:
 spec:
   subscriptions:
   - image:
-      repoURL: docker.io/christianh814/gobg
+      repoURL: ghcr.io/christianh814/gobg
       imageSelectionStrategy: SemVer
       allowTags: '^v\d+\.\d+\.\d+$'
       semverConstraint: '>= 1.0.0'
